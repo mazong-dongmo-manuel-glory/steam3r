@@ -8,3 +8,6 @@ Route::get('/games/{id}', [GameController::class, 'show'])->name('games.show');
 Route::get('/add', [GameController::class, 'create'])->name('games.create');
 Route::post('/store', [GameController::class, 'store'])->name('games.store');
 Route::get('/game/{category}',[GameController::class,'gameByCategorie'])->name('game.category');
+
+Route::get('/game/login',[GameController::class,'login'])->name('game.login');
+Route::post('/game/dologin',[GameController::class,'dologin'])->name('game.dologin');

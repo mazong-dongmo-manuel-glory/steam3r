@@ -70,7 +70,7 @@
                         <li><a href="/" class="active">Home</a></li>
                         <li><a href="{{route('games.create')}}">Ajouter</a></li>
                         <li><a href="details.html">Details</a></li>
-                        <li><a href="streams.html">Streams</a></li>
+                        <li><a href="{{route('game.login')}}">Login</a></li>
                         <li><a href="profile.html">Profile <img src="{{ asset('assets/images/profile-header.jpg')}}" alt=""></a></li>
                     </ul>
                     <a class='menu-trigger'>
