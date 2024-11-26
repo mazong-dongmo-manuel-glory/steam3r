@@ -1,0 +1,7 @@
+usagers(categorie, department, matricule,nom,prenom,adresse,email,mdp) 
+jeux(noJeu, nbrTelechargement, lien, version, nom, dateDepot)
+jeuxMedia(noJeu,lien_media)
+equipe(id,nombreEtudiant)
+equipe_usager(id_equipe,matriculeU)
+groupe(code_groupe, endroit, note, nomCours)
+groupe_usagers(code_group, matriculeU)
