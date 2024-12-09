@@ -5,7 +5,8 @@
 @section('content')
  <div class="container">
     <h2>Connexion</h2>
-    <form method="POST" action="">
+    <form method="POST" action="{{route('usagers.dologin')}}">
+        @csrf
         <div class="form-group">
             <label for="matricule">SE CONNECTER AVEC UN MATRICULE DE COMPTE</label>
             <input type="text" id="matricule" name="matricule">

@@ -153,6 +153,9 @@ footer{
 
 
 }
+footer p{
+    text-align: center;
+}
 footer hr{
     height: 1px;
 }

@@ -5,7 +5,11 @@
 @section('content')
  <div class="container">
     <h2>Inscription</h2>
-    <form method="POST" action="">
+    <form method="POST" action="{{route('usagers.doSingUp')}}">
+        @csrf
+        <div class="form-group">
+
+        </div>
         <div class="form-group">
             <label for="username">Nom</label>
             <input type="text" id="username" name="username">
@@ -14,7 +18,7 @@
             <label for="matricule">Matricule</label>
             <input type="text" id="matricule" name="matricule">
         </div>
-        
+
         <div class="form-group">
             <label>Categorie</label>
             <select name="categorie">

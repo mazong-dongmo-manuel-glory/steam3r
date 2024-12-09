@@ -9,9 +9,9 @@
     <body>
         <header>
             <div class="first-line">
-                <a href="/login">connexion</a>
+                <a href="{{route('usagers.login')}}">connexion</a>
                 <span class="separator"></span>
-                <a href="/singup">inscription</a>
+                <a href="{{route('usagers.singup')}}">inscription</a>
             </div>
             <div class="second-line">
                 <a href="/"><span class="logo">STEAM3R</span></a>
@@ -31,7 +31,7 @@
                 © 2024 Valve Corporation. Tous droits réservés. Toutes les marques commerciales sont la propriété de leurs titulaires au Canada et dans d'autres pays.
                 TVA incluse pour tous les prix (le cas échéant).
             </p>
-            
+
         </footer>
     </body>
 </html>
