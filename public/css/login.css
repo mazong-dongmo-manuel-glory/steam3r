@@ -1,0 +1,99 @@
+
+body{
+    background:url("../images/back_shadow.jpg") center center no-repeat;
+    background-size: cover;
+}
+#content{
+ padding: 20px;
+ display: flex;
+ justify-content: center;
+ margin: 10%;
+ min-height: 90vh;
+
+}
+h2{
+    color: white;
+}
+form{
+    width: 400px;
+    background-color: #181a21;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin-top: 10px;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.form-group input{
+    border-radius: 2px;
+    color: #fff;
+    padding: 10px;
+    background: #32353c;
+    outline: none;
+    font-size: 15px;
+    grid-area: input;
+    border: 1px solid #32353c;
+    margin: 5px 0;
+    
+}
+.form-group label{
+    font-size: var(--fz-md);
+}
+button{
+    position: relative;
+    background: linear-gradient(90deg, #06BFFF 0%, #2D73FF 100%);
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    padding: 12px;
+    color: #fff;
+    font-size: var(--fz-md);
+    font-weight: 400;
+    font-family: inherit;
+    text-align: center;
+    cursor: pointer;
+}
+
+.form-group.remember{
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+}
+.form-group.remember label{
+    margin-left: 10px;
+}
+form a{
+    color: white;
+    font-size: var(--fz-md);
+    text-decoration:underline;
+    margin: 10px 0;
+    display: block;
+    text-align: center;
+}
+
+@media screen and (max-width:500px){
+    header .logo{
+        font-size: 20px;
+    }
+    header .second-line a{
+        margin:0 2px;
+        font-weight: 400;
+        color: white;
+        font-size: var(--fz-md);
+    }
+}
+
+@media screen and (max-width:500px){
+ 
+    form{
+        width: 300px;
+        background-color: #181a21;
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        margin-top: 10px;
+    }
+}

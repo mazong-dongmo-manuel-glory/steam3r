@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'Motiva sans';
+    src: url('/font/MotivaSansRegular.woff.ttf');
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Motiva sans';
+    
+}
+a{
+    text-decoration: none;
+}
+:root{
+    --bg-dark:#1b2838;
+    --bg--green:#5c7e10;
+    --bg-blueLight:#1a9fff;
+    --fz-md:11px;
+    --fz-mdx:14px;
+}
+body{
+    min-height: 100vh;
+    background-color:var(--bg-dark);
+}
+header{
+    background: #171d25;
+    background-position: center top;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    padding:0 10px;
+    padding-bottom:20px ;
+}
+header a:active{
+    color: #1a9fff;
+    border-bottom:2px solid #1a9fff;
+}
+header .logo{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+header .first-line{
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    font-size: 14px;
+    width: 100%;
+    padding: 5px 0;
+    flex-wrap: wrap;
+    
+}
+header .separator{
+    border: 2px;
+    height: 10px;
+    width: 1px;
+    display: inline-block;
+    color: white;
+    background-color: white;
+    margin: 0 5px;
+    
+}
+header .first-line a{
+    color: white;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+header .second-line {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header .second-line nav.menu{
+    margin-left: 10%;
+}
+header .second-line a{
+    margin:0 5px;
+    font-weight: 400;
+    color: white;
+}
+header .second-line  a.active{
+    color: #1a9fff;
+    border-bottom:2px solid #1a9fff;
+}
+header .second-line nav a:hover{
+    color: #1a9fff;
+    transition: color 0.3s ease-in-out;
+    border-bottom:2px solid #1a9fff;
+}
+div.banner{
+    background: url('../images/banner.jpg') center center no-repeat;
+    background-size: cover;
+    height: 300px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+div.search-banner{
+    background: linear-gradient(to right, #0A3A6E, #2A5F94, #4A7DB6);
+    height: 35px;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--bg-dark);
+    padding: 0 10px;
+}
+div.search-banner img{
+    width: 15px;
+    height: 15px;
+}
+div.search-banner form{
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    border: 1px solid  #1b2838;
+    padding: 2px;
+    justify-content: center;
+    background-color: #0A3A6E;
+}
+div .search-banner form input,div .search-banner form button{
+    outline: none;
+    border: none;
+}
+div .search-banner form input{
+    cursor: text;
+    background-color: #1b2838;
+    color: white;
+    font-size: var(--fz-md);
+    padding: 5px;
+
+
+}
+div.search-banner form button{
+    cursor: pointer;
+    padding: 3px;
+
+}
+div.search-banner a{
+    margin: 0 10px;
+    color: white;
+    font-size: var(--fz-md) ;
+}
+
+footer{
+
+    font-size: var(--fz-md);
+    color: white;
+    padding: 20px;
+    background: #171d25;
+    width: 100%;
+
+
+}
+footer hr{
+    height: 1px;
+}
+#content{
+    min-height: 90vh;
+}
+@media screen and (max-width:500px){
+    header .logo{
+        font-size: 20px;
+    }
+    header .second-line a{
+        margin:0 2px;
+        font-weight: 400;
+        color: white;
+        font-size: var(--fz-md);
+    }
+}
